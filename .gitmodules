@@ -1,0 +1,6 @@
+[submodule "vendor/raylib"]
+	path = vendor/raylib
+	url = https://github.com/raysan5/raylib
+[submodule "vendor/yaml-cpp"]
+	path = vendor/yaml-cpp
+	url = https://github.com/jbeder/yaml-cpp

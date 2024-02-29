@@ -1,0 +1,48 @@
+player:
+  speed: 5.0
+  animations:
+    - name: idle_down
+      numberOfFrames: 6
+      frameDelay: 0.1
+      loop: true
+      texture: player_idle_down
+    - name: idle_up
+      numberOfFrames: 6
+      frameDelay: 0.1
+      loop: true
+      texture: player_idle_up
+    - name: walk_down
+      numberOfFrames: 6
+      frameDelay: 0.1
+      loop: true
+      texture: player_walk_down
+    - name: walk_up
+      numberOfFrames: 6
+      frameDelay: 0.1
+      loop: true
+      texture: player_walk_up
+    - name: walk_right
+      numberOfFrames: 6
+      frameDelay: 0.1
+      loop: true
+      texture: player_walk_right
+    - name: attack_down
+      numberOfFrames: 4
+      frameDelay: 0.1
+      loop: false
+      texture: player_attack_down
+    - name: attack_up
+      numberOfFrames: 4
+      frameDelay: 0.1
+      loop: false
+      texture: player_attack_up
+    - name: attack_right
+      numberOfFrames: 4
+      frameDelay: 0.1
+      loop: false
+      texture: player_attack_right
+    - name: death
+      numberOfFrames: 3
+      frameDelay: 0.1
+      loop: false
+      texture: player_death
