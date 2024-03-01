@@ -35,4 +35,6 @@ private:
     std::vector<std::unique_ptr<Entity>> m_entities;
 
     ResourceManager *m_resourceManager = nullptr;
+
+    bool m_showFPS = true;
 };

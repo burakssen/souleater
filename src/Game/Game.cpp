@@ -49,6 +49,9 @@ void Game::Render()
     BeginDrawing();
     ClearBackground(RAYWHITE);
 
+    if(this->m_showFPS)
+        DrawFPS(10, 10);
+
     for (auto &e : this->m_entities)
         e->Render();
 
