@@ -111,7 +111,11 @@ void Player::HandleInput()
             this->m_direction.y /= sqrt(2);
         }
 
-        transform->SetPosition({transform->GetPosition().x + this->m_direction.x * this->m_speed, transform->GetPosition().y + this->m_direction.y * this->m_speed});
+        float x = transform->GetPosition().x + this->m_direction.x * this->m_speed * GetFrameTime();
+        float y = transform->GetPosition().y + this->m_direction.y * this->m_speed * GetFrameTime();
+
+
+        transform->SetPosition({x, y});
     }
 
     if (this->m_direction.x != 0 || this->m_direction.y != 0)
@@ -128,13 +132,13 @@ void Player::HandleInput()
 
     if (IsKeyPressed(KEY_RIGHT) || (!isPlaying && !isLoop && IsKeyDown(KEY_RIGHT)))
     {
-        transform->SetScale({abs(scale.x), scale.y});
+        transform->SetScale({(float)std::abs(scale.x), scale.y});
         animation->SetAnimation("walk_right");
     }
 
     if (IsKeyPressed(KEY_LEFT) || (!isPlaying && !isLoop && IsKeyDown(KEY_LEFT)))
     {
-        transform->SetScale({-abs(scale.x), scale.y});
+        transform->SetScale({(float)-std::abs(scale.x), scale.y});
         animation->SetAnimation("walk_right");
     }
 

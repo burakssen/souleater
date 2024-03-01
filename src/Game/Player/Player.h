@@ -18,7 +18,7 @@ public:
     void HandleInput() override;
 
 private:
-    float m_speed = 5.0f;
+    float m_speed = 300.0f;
     Vector2 m_direction = {0, 0};
     Vector2 m_previousDirection = {0, 0};
 
